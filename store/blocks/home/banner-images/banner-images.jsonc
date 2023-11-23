@@ -1,0 +1,56 @@
+{
+	"flex-layout.row#banner-images": {
+		"children": [
+			"flex-layout.col#banner-images-left",
+			"flex-layout.col#banner-image-right"
+		],
+		"props": {
+			"fullWidth": true,
+			"colGap": 3
+		}
+	},
+	"flex-layout.col#banner-images-left": {
+		"children": ["image#banner-images-left"],
+		"props": { "width": "50%" }
+	},
+	"image#banner-images-left": {
+		"props": {
+			"src": "https://prohygiene.com/argentina/wp-content/uploads/sites/12/2015/12/placeholder-768x512.gif",
+			"maxWidth": "100%"
+		}
+	},
+	"flex-layout.col#banner-image-right": {
+		"children": [
+			"flex-layout.row#banner-image-right-top",
+			"flex-layout.row#banner-image-right-bottom"
+		],
+		"props": { "width": "50%", "rowGap": 3 }
+	},
+	"flex-layout.row#banner-image-right-top": {
+		"children": ["image#banner-image-right-top"]
+	},
+	"image#banner-image-right-top": {
+		"props": {
+			"src": "https://www.unfe.org/wp-content/uploads/2019/04/SM-placeholder-1024x512.png"
+		}
+	},
+	"flex-layout.row#banner-image-right-bottom": {
+		"children": [
+			"image#banner-image-right-bottom-left",
+			"image#banner-image-right-bottom-right"
+		],
+		"props": {
+			"colGap": 3
+		}
+	},
+	"image#banner-image-right-bottom-left": {
+		"props": {
+			"src": "https://geekflare.com/wp-content/uploads/2023/03/img-placeholder.png"
+		}
+	},
+	"image#banner-image-right-bottom-right": {
+		"props": {
+			"src": "https://geekflare.com/wp-content/uploads/2023/03/img-placeholder.png"
+		}
+	}
+}
