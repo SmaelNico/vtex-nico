@@ -1,0 +1,87 @@
+{
+	"flex-layout.row#slider-logos": {
+		"children": ["slider-layout#text-test"],
+		"props": {
+			"marginBottom": 5,
+			"marginTop": 5
+		}
+	},
+	"slider-layout#text-test": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 7,
+				"tablet": 3,
+				"phone": 1
+			},
+			"infinite": true,
+			"showNavigationArrows": "always",
+			"blockClass": "carousel",
+			"showPaginationDots": "never",
+			"navigationStep": 1,
+			"arrowSize": {
+				"desktop": 16,
+				"mobile": 8
+			},
+			"autoplay": {
+				"stopOnHover": false,
+				"timeout": 3800
+			}
+		},
+		"children": [
+			"image#slider-logos-1",
+			"image#slider-logos-2",
+			"image#slider-logos-3",
+			"image#slider-logos-4",
+			"image#slider-logos-5",
+			"image#slider-logos-6",
+			"image#slider-logos-7",
+			"image#slider-logos-8",
+			"image#slider-logos-9"
+		]
+	},
+	"image#slider-logos-1": {
+		"props": {
+			"src": "https://dieselpunkcore.com/wp-content/uploads/2014/06/logo-placeholder.png"
+		}
+	},
+	"image#slider-logos-2": {
+		"props": {
+			"src": "https://dieselpunkcore.com/wp-content/uploads/2014/06/logo-placeholder.png"
+		}
+	},
+	"image#slider-logos-3": {
+		"props": {
+			"src": "https://dieselpunkcore.com/wp-content/uploads/2014/06/logo-placeholder.png"
+		}
+	},
+	"image#slider-logos-4": {
+		"props": {
+			"src": "https://dieselpunkcore.com/wp-content/uploads/2014/06/logo-placeholder.png"
+		}
+	},
+	"image#slider-logos-5": {
+		"props": {
+			"src": "https://dieselpunkcore.com/wp-content/uploads/2014/06/logo-placeholder.png"
+		}
+	},
+	"image#slider-logos-6": {
+		"props": {
+			"src": "https://dieselpunkcore.com/wp-content/uploads/2014/06/logo-placeholder.png"
+		}
+	},
+	"image#slider-logos-7": {
+		"props": {
+			"src": "https://dieselpunkcore.com/wp-content/uploads/2014/06/logo-placeholder.png"
+		}
+	},
+	"image#slider-logos-8": {
+		"props": {
+			"src": "https://dieselpunkcore.com/wp-content/uploads/2014/06/logo-placeholder.png"
+		}
+	},
+	"image#slider-logos-9": {
+		"props": {
+			"src": "https://dieselpunkcore.com/wp-content/uploads/2014/06/logo-placeholder.png"
+		}
+	}
+}
