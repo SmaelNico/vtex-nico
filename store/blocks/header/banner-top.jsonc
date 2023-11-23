@@ -1,0 +1,42 @@
+{
+	"flex-layout.row#banner-top": {
+		"children": [
+			"flex-layout.col#baner-top-logos",
+			"flex-layout.col#banner-top-gif"
+		],
+		"props": {
+			"fullWidth": true,
+			"horizontalAlign": "between",
+			"colGap": 5,
+			"border": "all",
+			"borderColor": "green",
+			"borderWidth": 2,
+			"blockClass": "banner-top"
+		}
+	},
+	"flex-layout.col#baner-top-logos": {
+		"props": {
+			"width": "20%",
+			"border": "all",
+			"borderColor": "blue",
+			"borderWidth": 1
+		}
+	},
+	"flex-layout.col#banner-top-gif": {
+		"children": ["rich-text#banner-top-text"],
+		"props": {
+			"width": "80%",
+			"border": "all",
+			"borderColor": "red",
+			"borderWidth": 1
+		}
+	},
+	"rich-text#banner-top-text": {
+		"props": {
+			"text": "Testing Header Text",
+			"blockClass": "focus-in-contract-bck",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER"
+		}
+	}
+}
