@@ -1,0 +1,116 @@
+{
+	"flex-layout.row#new-in": {
+		"children": ["flex-layout.col#new-in"]
+	},
+	"flex-layout.col#new-in": {
+		"children": [
+			"flex-layout.row#new-in-title",
+			"flex-layout.col#new-in-slider"
+		],
+		"props": {
+			"marginBottom": 5,
+			"marginTop": 5
+		}
+	},
+	"flex-layout.row#new-in-title": {
+		"children": [
+			"rich-text#new-in-title-text",
+			"rich-text#new-in-title-button"
+		]
+	},
+	"rich-text#new-in-title-text": {
+		"props": {
+			"text": "New In",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER"
+		}
+	},
+	"rich-text#new-in-title-button": {
+		"props": {
+			"text": "[VER TODO](/)",
+			"textAlignment": "RIGHT",
+			"textPosition": "RIGHT"
+		}
+	},
+	"flex-layout.col#new-in-slider": {
+		"children": ["list-context.product-list#new-in-slider-list"],
+		"props": {
+			"width": "95%"
+		}
+	},
+	"list-context.product-list#new-in-slider-list": {
+		"props": {
+			"maxItems": 20,
+			"orderBy": "OrderByNameASC"
+		},
+		"blocks": ["product-summary.shelf#new-in-slider-list-product-summary"],
+		"children": ["slider-layout#new-in-slider-list-products"]
+	},
+	"product-summary.shelf#new-in-slider-list-product-summary": {
+		"children": [
+			"product-summary-image#new-in-slider-list-product-summary-image",
+			"product-summary-name#new-in-slider-list-product-summary-name",
+			"product-summary-space",
+			"product-price-savings#new-in-slider-list-product-summary-savings",
+			"product-selling-price#new-in-slider-list-product-summary-price",
+			"product-installments#new-in-slider-list-product-summary-installments"
+
+			// "product-rating-inline",
+			// "product-summary-buy-button"
+		]
+	},
+	"product-summary-image#new-in-slider-list-product-summary-image": {
+		"props": {
+			"showBadge": false
+		}
+	},
+	"product-summary-name#new-in-slider-list-product-summary-name": {
+		"props": {
+			"showSku": true
+		}
+	},
+	"product-price-savings#new-in-slider-list-product-summary-savings": {
+		"props": {
+			"message": "Ahorrá {savingsValue}"
+		}
+	},
+	"product-selling-price#new-in-slider-list-product-summary-price": {},
+	"product-installments#new-in-slider-list-product-summary-installments": {
+		"props": {
+			"installmentsCriteria": "max-quantity-without-interest",
+			"message": "{installmentsNumber} cuotas sin interés de {installmentValue}",
+			"blockClass": "cuotasVitrina"
+		}
+	},
+	"product-summary-buy-button": {
+		"props": {
+			"isOneClickBuy": false
+		}
+	},
+	"slider-layout#new-in-slider-list-products": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 5,
+				"tablet": 3,
+				"phone": 2
+			},
+			"infinite": true,
+			"fullWidth": false,
+			"arrowSize": {
+				"mobile": 0,
+				"desktop": 18
+			},
+			"autoplay": {
+				"stopOnHover": true,
+				"timeout": 3400
+			},
+			"slideTransition": {
+				"speed": 700,
+				"delay": 0
+			},
+			"showNavigationArrows": "desktopOnly",
+			"showPaginationDots": "mobileOnly",
+			"usePagination": true
+		}
+	}
+}

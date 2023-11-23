@@ -2,7 +2,8 @@
 	"store.home": {
 		"blocks": [
 			"flex-layout.row#banner-images",
-			"flex-layout.row#slider-logos"
+			"flex-layout.row#slider-logos",
+			"flex-layout.row#new-in"
 		]
 	}
 }
