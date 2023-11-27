@@ -40,7 +40,7 @@
 	},
 	"list-context.product-list#new-in-slider-list": {
 		"props": {
-			"maxItems": 20,
+			"maxItems": 50,
 			"orderBy": "OrderByNameASC"
 		},
 		"blocks": ["product-summary.shelf#new-in-slider-list-product-summary"],
@@ -48,6 +48,7 @@
 	},
 	"product-summary.shelf#new-in-slider-list-product-summary": {
 		"children": [
+			"vtex.product-highlights@2.x:product-highlights",
 			"product-summary-image#new-in-slider-list-product-summary-image",
 			"product-summary-name#new-in-slider-list-product-summary-name",
 			"product-summary-space",
@@ -58,6 +59,14 @@
 			// "product-rating-inline",
 			// "product-summary-buy-button"
 		]
+	},
+	"vtex.product-highlights@2.x:product-highlights": {
+		"children": ["product-highlight-text"]
+	},
+	"product-highlight-text": {
+		"props": {
+			"message": "{highlightName}"
+		}
 	},
 	"product-summary-image#new-in-slider-list-product-summary-image": {
 		"props": {
