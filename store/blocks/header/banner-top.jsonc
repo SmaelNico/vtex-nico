@@ -1,42 +1,83 @@
 {
 	"flex-layout.row#banner-top": {
 		"children": [
-			"flex-layout.col#baner-top-logos",
-			"flex-layout.col#banner-top-gif"
+			"flex-layout.col#logo-1",
+			"flex-layout.col#logo-2",
+			"flex-layout.col#banner-top-image",
+			"flex-layout.col#banner-top-text"
 		],
 		"props": {
 			"fullWidth": true,
-			"horizontalAlign": "between",
+			"horizontalAlign": "around",
 			"colGap": 5,
-			"border": "all",
-			"borderColor": "green",
-			"borderWidth": 2,
 			"blockClass": "banner-top"
 		}
 	},
-	"flex-layout.col#baner-top-logos": {
+	"flex-layout.col#banner-top-image": {
+		"children": ["image#banner-top-image"],
 		"props": {
-			"width": "20%",
-			"border": "all",
-			"borderColor": "blue",
-			"borderWidth": 1
+			"width": "40%",
+			"blockClass": "banner-top-image"
 		}
 	},
-	"flex-layout.col#banner-top-gif": {
-		"children": ["rich-text#banner-top-text"],
+	"image#banner-top-image": {
 		"props": {
-			"width": "80%",
-			"border": "all",
-			"borderColor": "red",
-			"borderWidth": 1
+			"src": "https://exitio.vtexassets.com/assets/vtex.file-manager-graphql/images/850a382a-a5e2-4239-9cdb-7941ed6c79fe___b4c29b5be0a0978dad136e31eed7c5b2.gif"
 		}
 	},
-	"rich-text#banner-top-text": {
+	"flex-layout.col#logo-1": {
+		"children": ["image#banner-top-logos-1"],
+		"props": { "verticalAlign": "middle", "width": "5%" }
+	},
+	"image#banner-top-logos-1": {
 		"props": {
-			"text": "Testing Header Text",
-			"blockClass": "focus-in-contract-bck",
+			"src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ_q1Oe1AsbTGl514tyYmIayzMVJAPXx9-pA&usqp=CAU",
+			"maxHeight": 50,
+			"blockClass": "topLogs"
+		}
+	},
+	"flex-layout.col#logo-2": {
+		"children": ["image#banner-top-logos-2"],
+		"props": { "verticalAlign": "middle", "width": "5%" }
+	},
+	"image#banner-top-logos-2": {
+		"props": {
+			"src": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZf4tvpMCrLSd-zuOCInbt9jiIXclytvib-g&usqp=CAU",
+			"maxHeight": 50,
+			"blockClass": "topLogs"
+		}
+	},
+	"flex-layout.col#banner-top-text": {
+		"children": ["flex-layout.row#banner-top-text"],
+		"props": {
+			"width": "15%",
+			"verticalAlign": "middle"
+		}
+	},
+	"flex-layout.row#banner-top-text": {
+		"children": [
+			"rich-text#banner-top-text-wts",
+			"rich-text#banner-top-text-suc"
+		]
+	},
+	"rich-text#banner-top-text-wts": {
+		"props": {
+			"text": "[contacto](https://web.whatsapp.com/)",
 			"textAlignment": "CENTER",
-			"textPosition": "CENTER"
-		}
+			"textPosition": "CENTER",
+			"font": "t-heading-6",
+			"blockClass": ["textosHeaderContacto", "box"]
+		},
+		"title": "Header Texto Contacto"
+	},
+	"rich-text#banner-top-text-suc": {
+		"props": {
+			"text": "[sucursales](/sucursales)",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"font": "t-heading-6",
+			"blockClass": "textosHeaderSucursales"
+		},
+		"title": "Header Texto Sucursales"
 	}
 }

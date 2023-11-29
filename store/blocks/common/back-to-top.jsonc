@@ -1,0 +1,8 @@
+{
+	"back-to-top-button": {
+		"props": {
+			"displayThreshold": 150,
+			"display": "caret-icon"
+		}
+	}
+}
