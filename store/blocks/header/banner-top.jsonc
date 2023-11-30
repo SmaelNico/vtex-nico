@@ -66,7 +66,8 @@
 			"textAlignment": "CENTER",
 			"textPosition": "CENTER",
 			"font": "t-heading-6",
-			"blockClass": ["textosHeaderContacto", "box"]
+			"blockClass": "textosHeaderContacto"
+			// "blockClass": ["textosHeaderContacto", "box"]
 		},
 		"title": "Header Texto Contacto"
 	},
