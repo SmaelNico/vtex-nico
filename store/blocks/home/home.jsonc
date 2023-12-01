@@ -9,6 +9,40 @@
 		]
 	},
 	"countdown": {
-		"children": ["flex-layout.row#new-in"]
+		"children": ["list-context.product-list#countdown-slider-list"]
+	},
+	"list-context.product-list#countdown-slider-list": {
+		"props": {
+			"maxItems": 50,
+			"orderBy": "OrderByNameASC"
+		},
+		"blocks": ["product-summary.shelf#new-in-slider-list-product-summary"],
+		"children": ["slider-layout#countdown-slider-list-products"]
+	},
+	"slider-layout#countdown-slider-list-products": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 4,
+				"tablet": 3,
+				"phone": 2
+			},
+			"infinite": true,
+			"fullWidth": false,
+			"arrowSize": {
+				"mobile": 0,
+				"desktop": 16
+			},
+			"autoplay": {
+				"stopOnHover": true,
+				"timeout": 3400
+			},
+			"slideTransition": {
+				"speed": 700,
+				"delay": 0
+			},
+			"showNavigationArrows": "desktopOnly",
+			"showPaginationDots": "mobileOnly",
+			"usePagination": true
+		}
 	}
 }
