@@ -1,0 +1,12 @@
+{
+	"store.custom#envio-gratis": {
+		"children": ["rich-text#envio-gratis"]
+	},
+	"rich-text#envio-gratis": {
+		"props": {
+			"text": "Editar",
+			"title": "VALOR DE LA PROMO ENVIO GRATIS VIGENTE",
+			"blockClass": "free-shipping-info"
+		}
+	}
+}

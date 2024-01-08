@@ -1,0 +1,130 @@
+/* Navigation Arrows - Chevrones - Flechas del banner principal */
+.caretIcon--sliderPrincipal {
+	padding: 0.8rem 0.6rem;
+	opacity: 0.4;
+	background-color: #a7a7a7;
+	color: #fff;
+}
+.sliderLeftArrow .caretIcon--sliderPrincipal {
+	border-radius: 0 10px 10px 0;
+}
+.sliderRightArrow .caretIcon--sliderPrincipal {
+	border-radius: 10px 0 0 10px;
+}
+.caretIcon--sliderPrincipal :hover {
+	color: #000;
+}
+/* End Navigation Arrows */
+
+.sliderTrackContainer--carouselPromos {
+	margin: 0 2.5% 0 2.5%;
+	padding: 1rem;
+	border-bottom: 1px solid rgba(211, 211, 211, 0.8);
+	border-top: 1px solid rgba(211, 211, 211, 0.8);
+}
+
+.sliderLayoutContainer--carouselPromos {
+	margin-top: 50px;
+}
+
+.slideChildrenContainer--carouselPromos {
+	border-right: 1px solid rgba(211, 211, 211, 0.8);
+}
+.paginationDotsContainer {
+	padding: 0.5rem;
+}
+.sliderRightArrow {
+	color: #abacb3;
+	margin: 0px;
+	padding: 0px;
+}
+.sliderLeftArrow {
+	color: #abacb3;
+	margin: 0px;
+	padding: 0px;
+}
+.slideChildrenContainer--sliderVitrina {
+	padding: 0.6rem 0.3rem;
+	margin-bottom: 15px;
+}
+
+.sliderTrackContainer--carouselBusqueda {
+	border-left: 0.5px solid #91a17e;
+	border-right: 0.5px solid #91a17e;
+}
+
+.slide--carouselBusqueda--visible {
+	border-left: 0.5px solid #91a17e;
+	border-right: 0.5px solid #91a17e;
+}
+
+.sliderTrack--carouselBusqueda {
+	background-color: #fcfcfc;
+}
+
+.sliderLayoutContainer--brandSlider {
+	margin-top: 10px;
+	margin-bottom: 2rem;
+}
+
+.imageElement--brandSlider {
+	padding: 6px;
+	height: 75px;
+	object-fit: scale-down;
+}
+
+.slideChildrenContainer--sliderTextoHomeMobile {
+	background-color: #fcfcfc;
+	margin: 0.5rem 0;
+}
+
+.paginationDotsContainer--brandSlider {
+	margin-bottom: -2rem;
+}
+
+.sliderLeftArrow--sliderPromoHeader,
+.sliderRightArrow--sliderPromoHeader {
+	color: #fff;
+	margin: 10%;
+}
+
+@media (max-width: 1440px) {
+	.slide--carouselBusqueda--firstVisible {
+		border: none;
+	}
+}
+
+@media (max-width: 1024px) {
+	.slide--sliderTextoHomeMobile {
+		padding: 10px;
+		background-color: #fcfcfc;
+	}
+	.caretIcon--sliderTextoHomeMobile {
+		color: #54752b;
+	}
+	.sliderLeftArrow--sliderTextoHomeMobile,
+	.sliderRightArrow--sliderTextoHomeMobile {
+		margin: 0 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.sliderLeftArrow--sliderTextoHomeMobile,
+	.sliderRightArrow--sliderTextoHomeMobile {
+		margin: 0 5px;
+	}
+
+	.sliderLayoutContainer--sliderVitrina {
+		padding: 0 !important;
+	}
+	.caretIcon--sliderTextoHomeMobile {
+		width: 16px;
+		height: 16px;
+	}
+	.paginationDotsContainer--brandSlider {
+		padding: 0;
+		margin-top: 12px;
+		margin-bottom: 3px;
+		bottom: -1rem;
+	}
+}

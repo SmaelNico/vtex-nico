@@ -1,0 +1,51 @@
+{
+	"search-result-layout": {
+		"blocks": [
+			"search-result-layout.desktop",
+			"search-result-layout.mobile",
+			"search-not-found-layout"
+		]
+	},
+	"search-result-layout.desktop": {
+		"children": ["flex-layout.row#search"]
+	},
+	"search-not-found-layout": {
+		"children": ["not-found"]
+	},
+	"flex-layout.row#search": {
+		"children": [
+			"flex-layout.col#search-filters",
+			"flex-layout.col#search-products"
+		],
+		"props": {
+			"colGap": 2
+		}
+	},
+	"flex-layout.col#search-filters": {
+		"children": [
+			// LISTA DE FILTROS
+			"filter-navigator.v3"
+		],
+		"props": {
+			"width": "20%"
+		}
+	},
+	"flex-layout.col#search-products": {
+		"children": [
+			// UBICACION
+			"breadcrumb.search",
+			// QUE SE ESTA BUSCANDO
+			"search-title.v2",
+			// CANTIDAD DE PRODUCTOS
+			"total-products.v2",
+			// DESPLEGABLE TIPO FILTRADOS
+			"order-by.v2",
+			// BOTON DE MOSTRAR ANTERIOR
+			"search-fetch-previous",
+			// MUESTRA LA GALERIA O EL NOT FOUND
+			"search-content",
+			// BOTON DE MOSTRAR MAS
+			"search-fetch-more"
+		]
+	}
+}

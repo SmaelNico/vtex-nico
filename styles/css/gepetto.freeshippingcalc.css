@@ -1,0 +1,84 @@
+.customShippingInfoFree {
+	width: 100%;
+	text-align: center;
+	padding: 15px 0px;
+	margin: 10px 0px;
+	font-size: 0.95rem;
+	font-weight: 600;
+	overflow: hidden;
+	position: relative;
+
+	/* EDITABLES  */
+	background: #0b3ba5;
+	color: #fff;
+	font-family: arial, sans-serif;
+}
+
+.customShippingInfoNotFree {
+	width: 100%;
+	text-align: center;
+	padding: 15px 0px;
+	margin: 10px 0px;
+	font-size: 0.95rem;
+	overflow: hidden;
+	position: relative;
+
+	/* EDITABLES */
+	background: #0b3ba5;
+	color: #fff;
+	font-family: arial, sans-serif;
+}
+@media (max-width: 450px) {
+	.customShippingInfoFree,
+	.customShippingInfoNotFree {
+		font-size: 0.8rem;
+	}
+}
+@media (max-width: 378px) {
+	.customShippingInfoFree,
+	.customShippingInfoNotFree {
+		font-size: 0.7rem;
+	}
+}
+
+.customShippingInfoPrice,
+.customShippingInfoLabel {
+	font-weight: 800;
+}
+
+.customShippingInfoLabelDisclaimer {
+	font-size: 0.6rem;
+	font-weight: 500;
+}
+
+.customShippingInfoFree::before,
+.customShippingInfoNotFree::before {
+	position: absolute;
+	content: "";
+	display: inline-block;
+	top: -250px;
+	left: 0;
+	width: 30px;
+	height: 100%;
+	background-color: #fff;
+	animation: shiny-btn1 7s ease-in-out infinite;
+}
+
+@keyframes shiny-btn1 {
+	0% {
+		-webkit-transform: scale(0) rotate(45deg);
+		opacity: 0;
+	}
+	80% {
+		-webkit-transform: scale(0) rotate(45deg);
+		opacity: 0.5;
+	}
+	81% {
+		-webkit-transform: scale(4) rotate(45deg);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(50) rotate(45deg);
+		opacity: 0;
+	}
+}

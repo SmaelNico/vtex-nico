@@ -1,0 +1,40 @@
+.title {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #54752b;
+	margin: 1rem 0;
+	text-align: center;
+	margin-top: 0;
+	padding: 0.5rem;
+}
+.slide {
+	padding: 0 0.3rem;
+	margin: 0;
+	border-radius: 2%;
+}
+
+.arrowLeft,
+.arrowRight {
+	color: #abacb3;
+	margin: 0 -50px;
+}
+.caretIcon {
+	width: 30px;
+	height: 40px;
+}
+
+@media (max-width: 480px) {
+	.arrowLeft,
+	.arrowRight {
+		display: none;
+	}
+	.title {
+		width: 100%;
+		font-size: 1.4rem;
+		margin: 0;
+		padding-top: 0.5rem;
+	}
+	.slide {
+		padding: 0 0.1rem;
+	}
+}

@@ -1,14 +1,17 @@
 {
 	"store.home": {
 		"blocks": [
-			"back-to-top-button",
-			"countdown",
-			"flex-layout.row#banner-images",
-			"flex-layout.row#slider-logos",
-			"flex-layout.row#new-in"
+			// "flex-layout.row#new-in",
+			// "back-to-top-button",
+			"countdown"
+			// "flex-layout.row#banner-images",
+			// "flex-layout.row#slider-logos"
 		]
 	},
 	"countdown": {
+		"children": ["flex-layout.row#sliderTest"]
+	},
+	"flex-layout.row#sliderTest": {
 		"children": ["list-context.product-list#countdown-slider-list"]
 	},
 	"list-context.product-list#countdown-slider-list": {
@@ -22,27 +25,20 @@
 	"slider-layout#countdown-slider-list-products": {
 		"props": {
 			"itemsPerPage": {
-				"desktop": 4,
+				"desktop": 5,
 				"tablet": 3,
 				"phone": 2
 			},
 			"infinite": true,
 			"fullWidth": false,
 			"arrowSize": {
-				"mobile": 0,
-				"desktop": 16
-			},
-			"autoplay": {
-				"stopOnHover": true,
-				"timeout": 3400
-			},
-			"slideTransition": {
-				"speed": 700,
-				"delay": 0
+				"mobile": 14,
+				"desktop": 18
 			},
 			"showNavigationArrows": "desktopOnly",
-			"showPaginationDots": "mobileOnly",
-			"usePagination": true
+			"showPaginationDots": "never",
+			"usePagination": true,
+			"blockClass": "sliderVitrina"
 		}
 	}
 }
