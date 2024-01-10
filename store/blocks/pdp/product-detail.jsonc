@@ -70,7 +70,8 @@
 	"flex-layout.col#buy-button": {
 		"props": {
 			"marginTop": 4,
-			"marginBottom": 7
+			"marginBottom": 7,
+			"oneClickBehavior": "ensure-sku-selection"
 		},
 		"children": ["buy-button"]
 	},

@@ -1,0 +1,176 @@
+.appContainer {
+	width: 100%;
+	max-width: 1000px;
+	height: 80vh;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 20px 0px;
+	gap: 40px;
+}
+
+.selectorContainer {
+	width: 360px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.selectorTitle {
+	color: black;
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+.selectorInput {
+	width: 280px;
+	padding: 5px 10px;
+}
+/* .selectorOption {
+} */
+
+.listStoresContainer {
+	width: 100%;
+	height: 80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px 0px;
+	margin: 10px 0px;
+	overflow-y: scroll;
+}
+.listStoresContainer::-webkit-scrollbar {
+	width: 4px;
+}
+.listStoresContainer::-webkit-scrollbar-track {
+	display: none;
+}
+.listStoresContainer::-webkit-scrollbar-thumb {
+	background: gray;
+}
+.listStoresContainer::-webkit-scrollbar-thumb:hover {
+	background: black;
+}
+
+/* STORE CARDS */
+.storeCard {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	gap: 5px 0px;
+	padding: 5px;
+	border-radius: 5px;
+	transition: all 0.2s ease-in-out;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(237, 224, 224, 0.75);
+	cursor: pointer;
+}
+.storeCard:hover {
+	transition: all 0.2s ease-in-out;
+	box-shadow: -1px 6px 11px 3px rgba(237, 224, 224, 0.75);
+	-webkit-box-shadow: -1px 6px 11px 3px rgba(237, 224, 224, 0.75);
+	-moz-box-shadow: -1px 6px 11px 3px rgba(237, 224, 224, 0.75);
+	/* box-shadow: -1px 6px 11px 3px rgba(186, 165, 165, 0.75);
+	-webkit-box-shadow: -1px 6px 11px 3px rgba(186, 165, 165, 0.75);
+	-moz-box-shadow: -1px 6px 11px 3px rgba(186, 165, 165, 0.75);
+    */
+}
+.storeCardName {
+	font-size: 1rem;
+	font-weight: 600;
+}
+.storeCardAdress {
+	font-size: 0.8rem;
+}
+.storeCardProvince {
+	font-size: 0.7rem;
+}
+.storeCardPhone {
+	font-size: 0.7rem;
+}
+.storeCardHoursTitle {
+	font-size: 0.8rem;
+}
+.storeCardHours {
+	font-size: 0.8rem;
+	font-weight: 600;
+}
+.storeCardCoors {
+	font-size: 0.6rem;
+}
+.storeCardPickup {
+	background-color: green;
+	color: white;
+	padding: 2px 4px;
+	border-radius: 2px;
+}
+
+/* MAP */
+.map {
+	width: 100%;
+	height: 100%;
+}
+
+/* ERROR API CALL */
+.errorMessage {
+	width: 100%;
+	text-align: center;
+	padding: 30px 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 1rem;
+	font-weight: 700;
+	gap: 30px 0px;
+	text-transform: uppercase;
+}
+.errorMessageIcon {
+	width: 200px;
+}
+
+@media (max-width: 630px) {
+	.appContainer {
+		flex-direction: column;
+		height: auto;
+	}
+	.selectorContainer {
+		width: 100%;
+		overflow-x: scroll;
+		padding-left: 10px;
+	}
+	.selectorTitle {
+		position: sticky;
+		left: 0px;
+	}
+	.selectorInput {
+		position: sticky;
+		left: 0px;
+	}
+	.listStoresContainer {
+		width: auto;
+		height: 200px;
+		flex-direction: row;
+		overflow-y: unset;
+		overflow-x: scroll;
+	}
+	.listStoresContainer::-webkit-scrollbar {
+		height: 3px;
+	}
+	.storeCard {
+		width: 250px;
+		height: 200px;
+		justify-content: space-between;
+	}
+	.map {
+		width: 100%;
+		height: 300px;
+	}
+}
